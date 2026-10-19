@@ -1,0 +1,1635 @@
+{
+  "output": {
+    "file": "public/models/brain.glb",
+    "bytes": 6640884,
+    "sha256": "fa4443f16203d4c71fcacbcffa1fff95f1a45eafff8621897a50c3aa34637a5f",
+    "triangles": 324316,
+    "sourceTriangles": 728108
+  },
+  "sources": {
+    "brain": {
+      "name": "3D Reference Organ for Brain, Female, v1.4 (HuBMAP Human Reference Atlas)",
+      "creators": "Kristen Browne, Heidi Schlehlein",
+      "doi": "https://doi.org/10.48539/HBM674.NTLM.353",
+      "license": "CC-BY-4.0",
+      "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/brain-female/v1.4/assets/3d-allen-f-brain.glb",
+      "bytes": 11983380,
+      "sha256": "f20d87a347f8d5c6467439cba7db18f19307d29b2c3e0c2b6ddb7e9d49e1c1fc",
+      "basedOn": "Allen Human Reference Atlas – 3D (Ding et al. 2016, J Comp Neurol 524:3127–3481), mirrored to a whole brain and sized to the Visible Human Female",
+      "sideNote": "Source nodes ending _L lie on the patient's right (negative x), so they are labelled right here; every side is checked by position."
+    },
+    "arteries": {
+      "name": "BodyParts3D 4.0 cerebral arteries (Database Center for Life Science), via the Human Atlas build",
+      "license": "CC-BY-4.0",
+      "intermediate": "github.com/Niyaz-05/human-atlas, commit 76f069640f2c3dd40a58d1556896ac25008f592e",
+      "atlasJsonSha256": "c359f4bcd2cba90b7411d66d5e9fc04dc81294d46cd5c1e8b212c824f2e5bbee",
+      "chunkSha256": {
+        "body-5.bin": "32a967198ffed45839968228898f3d246c67f86fb26892c3ae270be30e2f1149",
+        "body-6.bin": "1c98dae807210cc51a4abc806134727c9544155cad0cc328cf2e1ae1f954d3ff",
+        "body-7.bin": "06340f48478eb989cec117a558290c0cd54eeead9641b565cbb8aab255b4e56b"
+      },
+      "parts": {
+        "right-internal-carotid-artery": [
+          "FJ1658 Right anterior choroidal artery",
+          "FJ1674 Branch of right anterior choroidal artery to posterior limb of right internal capsule",
+          "FJ1682 Right internal carotid artery"
+        ],
+        "left-internal-carotid-artery": [
+          "FJ1658M Left anterior choroidal artery",
+          "FJ1674M Branch of left anterior choroidal artery to posterior limb of left internal capsule",
+          "FJ1682M Left internal carotid artery"
+        ],
+        "right-vertebral-artery": [
+          "FJ1657 Right anterior spinal artery"
+        ],
+        "left-vertebral-artery": [
+          "FJ1657M Left anterior spinal artery"
+        ],
+        "basilar-artery": [
+          "FJ1672 Basilar artery",
+          "FJ1684 Lateral branch of right pontine artery",
+          "FJ1684M Lateral branch of left pontine artery",
+          "FJ1689 Medial branch of right pontine artery",
+          "FJ1689M Medial branch of left pontine artery",
+          "FJ1844 Basilar artery"
+        ],
+        "right-anterior-cerebral-artery": [
+          "FJ1654 Right anterior cerebral artery",
+          "FJ1671 Precuneal branch of right pericallosal artery",
+          "FJ1676 Right callosomarginal artery",
+          "FJ1681 Intermediomedial branch of right callosomarginal artery",
+          "FJ1690 Right medial frontobasal artery",
+          "FJ1696 Paracentral branch of right callosomarginal artery",
+          "FJ1697 Paracentral branch of right callosomarginal artery",
+          "FJ1698 Paracentral branch of right callosomarginal artery",
+          "FJ1699 Right pericallosal artery",
+          "FJ1722 Posteromedial branch of right callosomarginal artery"
+        ],
+        "left-anterior-cerebral-artery": [
+          "FJ1654M Left anterior cerebral artery",
+          "FJ1671M Precuneal branch of left pericallosal artery",
+          "FJ1676M Left callosomarginal artery",
+          "FJ1681M Intermediomedial branch of left callosomarginal artery",
+          "FJ1690M Left medial frontobasal artery",
+          "FJ1696M Paracentral branch of left callosomarginal artery",
+          "FJ1697M Paracentral branch of left callosomarginal artery",
+          "FJ1698M Paracentral branch of left callosomarginal artery",
+          "FJ1699M Left pericallosal artery",
+          "FJ1722M Posteromedial branch of left callosomarginal artery"
+        ],
+        "anterior-communicating-artery": [
+          "FJ1655 Anterior communicating artery"
+        ],
+        "right-middle-cerebral-artery": [
+          "FJ1659 Right anterior temporal artery",
+          "FJ1660 Insular part of right middle cerebral artery",
+          "FJ1662 Anterolateral central branch of right middle cerebral artery",
+          "FJ1663 Anterolateral central branch of right middle cerebral artery",
+          "FJ1664 artery of central sulcus",
+          "FJ1665 artery of central sulcus",
+          "FJ1666 Artery of right postcentral sulcus",
+          "FJ1667 Right anterior parietal artery",
+          "FJ1668 Artery of right precentral sulcus",
+          "FJ1669 Artery of right precentral sulcus",
+          "FJ1670 Artery of right precentral sulcus",
+          "FJ1673 Branch of right middle cerebral artery to right angular gyrus",
+          "FJ1685 Right lateral frontobasal artery",
+          "FJ1686 Right lateral frontobasal artery",
+          "FJ1692 Sphenoid part of right middle cerebral artery",
+          "FJ1693 Middle temporal branch of right middle cerebral artery",
+          "FJ1694 Insular part of right middle cerebral artery",
+          "FJ1712 Right polar temporal artery",
+          "FJ1716 Right posterior parietal artery",
+          "FJ1717 Posterior temporal branch of right middle cerebral artery",
+          "FJ1718 Trunk of inferior terminal branch of right middle cerebral artery",
+          "FJ1724 Right prefrontal artery",
+          "FJ1729 Temporo-occipital branch of right middle cerebral artery"
+        ],
+        "left-middle-cerebral-artery": [
+          "FJ1659M Left anterior temporal artery",
+          "FJ1660M Insular part of left middle cerebral artery",
+          "FJ1662M Anterolateral central branch of left middle cerebral artery",
+          "FJ1663M Anterolateral central branch of left middle cerebral artery",
+          "FJ1664M Artery of central sulcus",
+          "FJ1665M Artery of central sulcus",
+          "FJ1666M Artery of left postcentral sulcus",
+          "FJ1667M Left anterior parietal artery",
+          "FJ1668M Artery of left precentral sulcus",
+          "FJ1669M Artery of left precentral sulcus",
+          "FJ1670M Artery of left precentral sulcus",
+          "FJ1673M Branch of left middle cerebral artery to left angular gyrus",
+          "FJ1685M Left lateral frontobasal artery",
+          "FJ1686M Left lateral frontobasal artery",
+          "FJ1692M Sphenoid part of left middle cerebral artery",
+          "FJ1693M Middle temporal branch of left middle cerebral artery",
+          "FJ1694M Insular part of left middle cerebral artery",
+          "FJ1712M Left polar temporal artery",
+          "FJ1716M Left posterior parietal artery",
+          "FJ1717M Posterior temporal branch of left middle cerebral artery",
+          "FJ1718M Trunk of inferior terminal branch of left middle cerebral artery",
+          "FJ1724M Left prefrontal artery",
+          "FJ1729M Temporo-occipital branch of left middle cerebral artery"
+        ],
+        "right-posterior-communicating-artery": [
+          "FJ1679 Hypothalamic branch of right posterior communicating artery",
+          "FJ1713 Right posterior communicating artery"
+        ],
+        "left-posterior-communicating-artery": [
+          "FJ1679M Hypothalamic branch of left posterior communicating artery",
+          "FJ1713M Left posterior communicating artery"
+        ],
+        "right-posterior-cerebral-artery": [
+          "FJ1661 Anterior temporal branch of right lateral occipital artery",
+          "FJ1675 Right thalamogeniculate artery",
+          "FJ1677 Right splenial artery",
+          "FJ1678 Right splenial artery",
+          "FJ1680 Middle temporal branch of right lateral occipital artery",
+          "FJ1687 Right lateral occipital artery",
+          "FJ1691 Right medial occipital artery",
+          "FJ1714 Postcommunicating part of right posterior cerebral artery",
+          "FJ1719 set of posterior temporal branches of lateral occipital artery",
+          "FJ1720 Right thalamoperforating artery",
+          "FJ1721 Posteromedial central branch of right posterior cerebral artery",
+          "FJ1723 Precommunicating part of right posterior cerebral artery",
+          "FJ1727 Right posterior medial choroidal artery"
+        ],
+        "left-posterior-cerebral-artery": [
+          "FJ1661M Anterior temporal branch of left lateral occipital artery",
+          "FJ1675M Left thalamogeniculate artery",
+          "FJ1677M Left splenial artery",
+          "FJ1678M Left splenial artery",
+          "FJ1680M Middle temporal branch of left lateral occipital artery",
+          "FJ1687M Left lateral occipital artery",
+          "FJ1691M Left medial occipital artery",
+          "FJ1714M Postcommunicating part of left posterior cerebral artery",
+          "FJ1719M Set of posterior temporal branches of lateral occipital artery",
+          "FJ1720M Left thalamoperforating artery",
+          "FJ1721M Posteromedial central branch of left posterior cerebral artery",
+          "FJ1723M Precommunicating part of left posterior cerebral artery",
+          "FJ1727M Left posterior medial choroidal artery"
+        ],
+        "right-cerebellar-arteries": [
+          "FJ1656 anterior inferior cerebellar artery",
+          "FJ1683 Lateral branch of right superior cerebellar artery",
+          "FJ1688 Medial branch of right superior cerebellar artery",
+          "FJ1700 Right posterior inferior cerebellar artery",
+          "FJ1701 Right posterior inferior cerebellar artery",
+          "FJ1702 Right posterior inferior cerebellar artery",
+          "FJ1703 Right posterior inferior cerebellar artery",
+          "FJ1704 Right posterior inferior cerebellar artery",
+          "FJ1705 Right posterior inferior cerebellar artery",
+          "FJ1706 Right posterior inferior cerebellar artery",
+          "FJ1707 Right posterior inferior cerebellar artery",
+          "FJ1708 Right posterior inferior cerebellar artery",
+          "FJ1709 Right posterior inferior cerebellar artery",
+          "FJ1710 Right posterior inferior cerebellar artery",
+          "FJ1711 Right posterior inferior cerebellar artery",
+          "FJ1715 Right posterior inferior cerebellar artery",
+          "FJ1726 Right superior cerebellar artery",
+          "FJ1728 Superior vermian branch of medial branch of right superior cerebellar artery"
+        ],
+        "left-cerebellar-arteries": [
+          "FJ1656M Anterior inferior cerebellar artery",
+          "FJ1683M Lateral branch of left superior cerebellar artery",
+          "FJ1688M Medial branch of left superior cerebellar artery",
+          "FJ1700M Left posterior inferior cerebellar artery",
+          "FJ1701M Left posterior inferior cerebellar artery",
+          "FJ1702M Left posterior inferior cerebellar artery",
+          "FJ1703M Left posterior inferior cerebellar artery",
+          "FJ1704M Left posterior inferior cerebellar artery",
+          "FJ1705M Left posterior inferior cerebellar artery",
+          "FJ1706M Left posterior inferior cerebellar artery",
+          "FJ1707M Left posterior inferior cerebellar artery",
+          "FJ1708M Left posterior inferior cerebellar artery",
+          "FJ1709M Left posterior inferior cerebellar artery",
+          "FJ1710M Left posterior inferior cerebellar artery",
+          "FJ1711M Left posterior inferior cerebellar artery",
+          "FJ1715M Left posterior inferior cerebellar artery",
+          "FJ1726M Left superior cerebellar artery",
+          "FJ1728M Superior vermian branch of medial branch of left superior cerebellar artery"
+        ]
+      },
+      "registration": {
+        "method": "affine (3x4) least squares on the centroids of structures present in both sources",
+        "affineRows": [
+          [
+            1.027179,
+            0.027031,
+            0.024656,
+            -0.049327
+          ],
+          [
+            -0.015642,
+            0.973134,
+            0.000709,
+            -0.80391
+          ],
+          [
+            -0.045737,
+            -0.035255,
+            0.885114,
+            0.010948
+          ]
+        ],
+        "rmsResidualMm": 5.448376,
+        "residuals": [
+          {
+            "landmark": "Corpus callosum",
+            "mm": 4.469086
+          },
+          {
+            "landmark": "Third ventricle",
+            "mm": 1.838771
+          },
+          {
+            "landmark": "Fourth ventricle",
+            "mm": 2.415077
+          },
+          {
+            "landmark": "Cerebral aqueduct",
+            "mm": 7.21448
+          },
+          {
+            "landmark": "Pons",
+            "mm": 3.34005
+          },
+          {
+            "landmark": "Medulla oblongata",
+            "mm": 4.496611
+          },
+          {
+            "landmark": "Optic chiasm",
+            "mm": 4.554792
+          },
+          {
+            "landmark": "Pineal body",
+            "mm": 4.731189
+          },
+          {
+            "landmark": "Left putamen",
+            "mm": 2.513829
+          },
+          {
+            "landmark": "Left thalamus",
+            "mm": 3.874019
+          },
+          {
+            "landmark": "Left caudate nucleus",
+            "mm": 6.741399
+          },
+          {
+            "landmark": "Left hippocampus",
+            "mm": 6.96165
+          },
+          {
+            "landmark": "Left postcentral gyrus",
+            "mm": 4.745232
+          },
+          {
+            "landmark": "Right postcentral gyrus",
+            "mm": 5.228433
+          },
+          {
+            "landmark": "Left angular gyrus",
+            "mm": 1.246543
+          },
+          {
+            "landmark": "Right angular gyrus",
+            "mm": 1.940568
+          },
+          {
+            "landmark": "Left middle frontal gyrus",
+            "mm": 5.29879
+          },
+          {
+            "landmark": "Right middle frontal gyrus",
+            "mm": 3.657022
+          },
+          {
+            "landmark": "Left middle temporal gyrus",
+            "mm": 6.162729
+          },
+          {
+            "landmark": "Right middle temporal gyrus",
+            "mm": 3.652036
+          },
+          {
+            "landmark": "Left insula",
+            "mm": 10.917892
+          },
+          {
+            "landmark": "Right insula",
+            "mm": 10.601174
+          },
+          {
+            "landmark": "Cerebellum",
+            "mm": 5.678462
+          }
+        ]
+      }
+    }
+  },
+  "changesHere": "Selected and merged the nodes in src/brain/source/structures.source.json (one node per structure); welded coincident vertices; simplified each source mesh with meshoptimizer within a 0.4 % relative error bound (largest error used: 0.400 %); recomputed smooth normals; registered the BodyParts3D arteries onto the HRA brain; translated so the centre of the brain's bounding box is the origin.",
+  "centreOffsetMetres": [
+    -0.006475,
+    0.78407,
+    -0.064573
+  ],
+  "orientationChecks": {
+    "frontalInFrontOfOccipital": true,
+    "cerebellumBelowCerebrum": true,
+    "cerebellumBehindBrainstem": true,
+    "ponsAboveMedulla": true,
+    "precentralInFrontOfPostcentral": true,
+    "temporalBelowParietal": true,
+    "basilarInFrontOfPons": true
+  },
+  "provisionalNames": {
+    "medial-superior-frontal-region": "source name 'posteroventral putamen' does not match its position (medial surface, upper frontal lobe)",
+    "inferior-temporal-region": "source name 'frontomarginal gyrus' does not match its position (low on the temporal lobe)",
+    "cerebral-white-matter": "the source part named 'frontal pole' is a thin sheet deep in the posterior white matter beside the lateral ventricle (not cortex, not at the front); it is merged into the white matter"
+  },
+  "structures": [
+    {
+      "id": "right-precentral-gyrus",
+      "nodes": [
+        "Allen_primary_motor_cortex_L"
+      ]
+    },
+    {
+      "id": "left-precentral-gyrus",
+      "nodes": [
+        "Allen_primary_motor_cortex_R"
+      ]
+    },
+    {
+      "id": "right-superior-frontal-gyrus",
+      "nodes": [
+        "Allen_superior_frontal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-superior-frontal-gyrus",
+      "nodes": [
+        "Allen_superior_frontal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-middle-frontal-gyrus",
+      "nodes": [
+        "Allen_middle_frontal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-middle-frontal-gyrus",
+      "nodes": [
+        "Allen_middle_frontal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-inferior-frontal-gyrus-opercular",
+      "nodes": [
+        "Allen_inferior_frontal_gyrus_opercular_part_L"
+      ]
+    },
+    {
+      "id": "left-inferior-frontal-gyrus-opercular",
+      "nodes": [
+        "Allen_inferior_frontal_gyrus_opercular_part_R"
+      ]
+    },
+    {
+      "id": "right-inferior-frontal-gyrus-triangular",
+      "nodes": [
+        "Allen_inferior_frontal_gyrus_triangular_part_L"
+      ]
+    },
+    {
+      "id": "left-inferior-frontal-gyrus-triangular",
+      "nodes": [
+        "Allen_inferior_frontal_gyrus_triangular_part_R"
+      ]
+    },
+    {
+      "id": "right-frontal-operculum",
+      "nodes": [
+        "Allen_frontal_operculum_L"
+      ]
+    },
+    {
+      "id": "left-frontal-operculum",
+      "nodes": [
+        "Allen_frontal_operculum_R"
+      ]
+    },
+    {
+      "id": "right-orbital-gyri",
+      "nodes": [
+        "Allen_anterior_intermediate_orbital_gyrus_L",
+        "Allen_posterior_intermediate_orbital_gyrus_L",
+        "Allen_lateral_orbital_gyrus_L",
+        "Allen_medial_orbital_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-orbital-gyri",
+      "nodes": [
+        "Allen_anterior_intermediate_orbital_gyrus_R",
+        "Allen_posterior_intermediate_orbital_gyrus_R",
+        "Allen_lateral_orbital_gyrus_R",
+        "Allen_medial_orbital_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-gyrus-rectus",
+      "nodes": [
+        "Allen_gyrus_rectus_straight_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-gyrus-rectus",
+      "nodes": [
+        "Allen_gyrus_rectus_straight_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-medial-frontal-gyri",
+      "nodes": [
+        "Allen_rostral_gyrus_L",
+        "Allen_paracingulate_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-medial-frontal-gyri",
+      "nodes": [
+        "Allen_rostral_gyrus_R",
+        "Allen_paracingulate_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-medial-superior-frontal-region",
+      "nodes": [
+        "Allen_posteroventral_putamen_L"
+      ]
+    },
+    {
+      "id": "left-medial-superior-frontal-region",
+      "nodes": [
+        "Allen_posteroventral_putamen_R"
+      ]
+    },
+    {
+      "id": "right-paracentral-lobule-anterior",
+      "nodes": [
+        "Allen_paracentral_lobule_rostral_part_L"
+      ]
+    },
+    {
+      "id": "left-paracentral-lobule-anterior",
+      "nodes": [
+        "Allen_paracentral_lobule_rostral_part_R"
+      ]
+    },
+    {
+      "id": "right-paracentral-lobule-posterior",
+      "nodes": [
+        "Allen_paracentral_lobule_caudal_part_L"
+      ]
+    },
+    {
+      "id": "left-paracentral-lobule-posterior",
+      "nodes": [
+        "Allen_paracentral_lobule_caudal_part_R"
+      ]
+    },
+    {
+      "id": "right-postcentral-gyrus",
+      "nodes": [
+        "Allen_postcentral_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-postcentral-gyrus",
+      "nodes": [
+        "Allen_postcentral_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-superior-parietal-lobule",
+      "nodes": [
+        "Allen_supraparietal_lobule_L"
+      ]
+    },
+    {
+      "id": "left-superior-parietal-lobule",
+      "nodes": [
+        "Allen_supraparietal_lobule_R"
+      ]
+    },
+    {
+      "id": "right-supramarginal-gyrus",
+      "nodes": [
+        "Allen_supramarginal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-supramarginal-gyrus",
+      "nodes": [
+        "Allen_supramarginal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-angular-gyrus",
+      "nodes": [
+        "Allen_angular_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-angular-gyrus",
+      "nodes": [
+        "Allen_angular_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-precuneus",
+      "nodes": [
+        "Allen_precuneus_L"
+      ]
+    },
+    {
+      "id": "left-precuneus",
+      "nodes": [
+        "Allen_precuneus_R"
+      ]
+    },
+    {
+      "id": "right-parietal-operculum",
+      "nodes": [
+        "Allen_parietal_operculum_L"
+      ]
+    },
+    {
+      "id": "left-parietal-operculum",
+      "nodes": [
+        "Allen_parietal_operculum_R"
+      ]
+    },
+    {
+      "id": "right-superior-temporal-gyrus",
+      "nodes": [
+        "Allen_superior_temporal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-superior-temporal-gyrus",
+      "nodes": [
+        "Allen_superior_temporal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-middle-temporal-gyrus",
+      "nodes": [
+        "Allen_middle_temporal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-middle-temporal-gyrus",
+      "nodes": [
+        "Allen_middle_temporal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-inferior-temporal-gyrus",
+      "nodes": [
+        "Allen_inferior_temporal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-inferior-temporal-gyrus",
+      "nodes": [
+        "Allen_inferior_temporal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-transverse-temporal-gyrus",
+      "nodes": [
+        "Allen_transverse_temporal_gyrus_Heschls_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-transverse-temporal-gyrus",
+      "nodes": [
+        "Allen_transverse_temporal_gyrus_Heschls_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-planum-temporale",
+      "nodes": [
+        "Allen_planum_temporale_L"
+      ]
+    },
+    {
+      "id": "left-planum-temporale",
+      "nodes": [
+        "Allen_planum_temporale_R"
+      ]
+    },
+    {
+      "id": "right-planum-polare",
+      "nodes": [
+        "Allen_planum_polare_L"
+      ]
+    },
+    {
+      "id": "left-planum-polare",
+      "nodes": [
+        "Allen_planum_polare_R"
+      ]
+    },
+    {
+      "id": "right-temporal-pole",
+      "nodes": [
+        "Allen_temporal_pole_L"
+      ]
+    },
+    {
+      "id": "left-temporal-pole",
+      "nodes": [
+        "Allen_temporal_pole_R"
+      ]
+    },
+    {
+      "id": "right-fusiform-gyrus",
+      "nodes": [
+        "Allen_occipitotemporal_fusiform_gyrus_temporal_part_L"
+      ]
+    },
+    {
+      "id": "left-fusiform-gyrus",
+      "nodes": [
+        "Allen_occipitotemporal_fusiform_gyrus_temporal_part_R"
+      ]
+    },
+    {
+      "id": "right-inferior-temporal-region",
+      "nodes": [
+        "Allen_frontomarginal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-inferior-temporal-region",
+      "nodes": [
+        "Allen_frontomarginal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-cuneus",
+      "nodes": [
+        "Allen_cuneus_L"
+      ]
+    },
+    {
+      "id": "left-cuneus",
+      "nodes": [
+        "Allen_cuneus_R"
+      ]
+    },
+    {
+      "id": "right-lingual-gyrus",
+      "nodes": [
+        "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-lingual-gyrus",
+      "nodes": [
+        "Allen_lingual_gyrus_medial_occipitotemporal_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-superior-occipital-gyrus",
+      "nodes": [
+        "Allen_superior_occipital_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-superior-occipital-gyrus",
+      "nodes": [
+        "Allen_superior_occipital_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-inferior-occipital-gyrus",
+      "nodes": [
+        "Allen_inferior_occipital_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-inferior-occipital-gyrus",
+      "nodes": [
+        "Allen_inferior_occipital_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-occipital-pole",
+      "nodes": [
+        "Allen_occipital_pole_L"
+      ]
+    },
+    {
+      "id": "left-occipital-pole",
+      "nodes": [
+        "Allen_occipital_pole_R"
+      ]
+    },
+    {
+      "id": "right-occipital-fusiform-gyrus",
+      "nodes": [
+        "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_L"
+      ]
+    },
+    {
+      "id": "left-occipital-fusiform-gyrus",
+      "nodes": [
+        "Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_R"
+      ]
+    },
+    {
+      "id": "right-insula",
+      "nodes": [
+        "Allen_long_insular_gyri_L",
+        "Allen_short_insular_gyri_L",
+        "Allen_limen_insula_L",
+        "Allen_frontal_agranular_insular_cortex_area_Fl_L",
+        "Allen_temporal_agranular_insular_cortex_area_Tl_L"
+      ]
+    },
+    {
+      "id": "left-insula",
+      "nodes": [
+        "Allen_long_insular_gyri_R",
+        "Allen_short_insular_gyri_R",
+        "Allen_limen_insula_R",
+        "Allen_frontal_agranular_insular_cortex_area_Fl_R",
+        "Allen_temporal_agranular_insular_cortex_area_Tl_R"
+      ]
+    },
+    {
+      "id": "right-cingulate-gyrus-anterior",
+      "nodes": [
+        "Allen_cingulate_gyrus_rostral_anterior_part_L"
+      ]
+    },
+    {
+      "id": "left-cingulate-gyrus-anterior",
+      "nodes": [
+        "Allen_cingulate_gyrus_rostral_anterior_part_R"
+      ]
+    },
+    {
+      "id": "right-cingulate-gyrus-posterior",
+      "nodes": [
+        "Allen_cingulate_gyrus_caudal_posterior_part_L",
+        "Allen_ingulo_parahippocampal_isthmus_L"
+      ]
+    },
+    {
+      "id": "left-cingulate-gyrus-posterior",
+      "nodes": [
+        "Allen_cingulate_gyrus_caudal_posterior_part_R",
+        "Allen_ingulo_parahippocampal_isthmus_R"
+      ]
+    },
+    {
+      "id": "right-parahippocampal-gyrus",
+      "nodes": [
+        "Allen_anterior_parahippocampal_gyrus_L",
+        "Allen_posterior_parahippocampal_gyrus_L",
+        "Allen_perirhinal_gyrus_rostral_part_of_FuGt_L",
+        "Allen_gyrus_ambiens_L"
+      ]
+    },
+    {
+      "id": "left-parahippocampal-gyrus",
+      "nodes": [
+        "Allen_anterior_parahippocampal_gyrus_R",
+        "Allen_posterior_parahippocampal_gyrus_R",
+        "Allen_perirhinal_gyrus_rostral_part_of_FuGt_R",
+        "Allen_gyrus_ambiens_R"
+      ]
+    },
+    {
+      "id": "right-subcallosal-gyrus",
+      "nodes": [
+        "Allen_subcallosal_gyrus_parolfactory_gyrus_L"
+      ]
+    },
+    {
+      "id": "left-subcallosal-gyrus",
+      "nodes": [
+        "Allen_subcallosal_gyrus_parolfactory_gyrus_R"
+      ]
+    },
+    {
+      "id": "right-olfactory-cortex",
+      "nodes": [
+        "Allen_piriform_region_L",
+        "Allen_lateral_olfactory_gyrus_L",
+        "Allen_anterior_olfactory_nucleus_L"
+      ]
+    },
+    {
+      "id": "left-olfactory-cortex",
+      "nodes": [
+        "Allen_piriform_region_R",
+        "Allen_lateral_olfactory_gyrus_R",
+        "Allen_anterior_olfactory_nucleus_R"
+      ]
+    },
+    {
+      "id": "right-cerebral-white-matter",
+      "nodes": [
+        "Allen_white_matter_of_forebrain_L",
+        "Allen_frontal_pole_L"
+      ]
+    },
+    {
+      "id": "left-cerebral-white-matter",
+      "nodes": [
+        "Allen_white_matter_of_forebrain_R",
+        "Allen_frontal_pole_R"
+      ]
+    },
+    {
+      "id": "corpus-callosum",
+      "nodes": [
+        "Allen_corpus_callosum_L",
+        "Allen_corpus_callosum_R"
+      ]
+    },
+    {
+      "id": "anterior-commissure",
+      "nodes": [
+        "Allen_anterior_commissure_L",
+        "Allen_anterior_commissure_R"
+      ]
+    },
+    {
+      "id": "fornix",
+      "nodes": [
+        "Allen_fornix_L",
+        "Allen_fornix_R"
+      ]
+    },
+    {
+      "id": "right-caudate-nucleus",
+      "nodes": [
+        "Allen_head_of_caudate_L",
+        "Allen_body_of_caudate_L",
+        "Allen_tail_of_caudate_L"
+      ]
+    },
+    {
+      "id": "left-caudate-nucleus",
+      "nodes": [
+        "Allen_head_of_caudate_R",
+        "Allen_body_of_caudate_R",
+        "Allen_tail_of_caudate_R"
+      ]
+    },
+    {
+      "id": "right-putamen",
+      "nodes": [
+        "Allen_putamen_L"
+      ]
+    },
+    {
+      "id": "left-putamen",
+      "nodes": [
+        "Allen_putamen_R"
+      ]
+    },
+    {
+      "id": "right-globus-pallidus",
+      "nodes": [
+        "Allen_external_segment_of_globus_pallidus_L",
+        "Allen_internal_segment_of_globus_pallidus_L"
+      ]
+    },
+    {
+      "id": "left-globus-pallidus",
+      "nodes": [
+        "Allen_external_segment_of_globus_pallidus_R",
+        "Allen_internal_segment_of_globus_pallidus_R"
+      ]
+    },
+    {
+      "id": "right-nucleus-accumbens",
+      "nodes": [
+        "Allen_nucleus_accumbens_L"
+      ]
+    },
+    {
+      "id": "left-nucleus-accumbens",
+      "nodes": [
+        "Allen_nucleus_accumbens_R"
+      ]
+    },
+    {
+      "id": "right-claustrum",
+      "nodes": [
+        "Allen_claustrum_L"
+      ]
+    },
+    {
+      "id": "left-claustrum",
+      "nodes": [
+        "Allen_claustrum_R"
+      ]
+    },
+    {
+      "id": "right-amygdala",
+      "nodes": [
+        "Allen_amygdaloid_complex_L",
+        "Allen_anterior_amygdaloid_area_L",
+        "Allen_lateral_nucleus_L",
+        "Allen_basolateral_nucleus_basal_nucleus_L",
+        "Allen_basomedial_nucleus_accessory_basal_nucleus_L",
+        "Allen_anterior_cortical_nucleus_L",
+        "Allen_posterior_cortical_nucleus_L",
+        "Allen_medial_nucleus_L",
+        "Allen_central_nuclear_group_L",
+        "Allen_amygdalohippocampal_area_L"
+      ]
+    },
+    {
+      "id": "left-amygdala",
+      "nodes": [
+        "Allen_amygdaloid_complex_R",
+        "Allen_anterior_amygdaloid_area_R",
+        "Allen_lateral_nucleus_R",
+        "Allen_basolateral_nucleus_basal_nucleus_R",
+        "Allen_basomedial_nucleus_accessory_basal_nucleus_R",
+        "Allen_anterior_cortical_nucleus_R",
+        "Allen_posterior_cortical_nucleus_R",
+        "Allen_medial_nucleus_R",
+        "Allen_central_nuclear_group_R",
+        "Allen_amygdalohippocampal_area_R"
+      ]
+    },
+    {
+      "id": "right-hippocampus",
+      "nodes": [
+        "Allen_head_of_hippocampus_L",
+        "Allen_body_of_hippocampus_L",
+        "Allen_tail_of_hippocampus_L"
+      ]
+    },
+    {
+      "id": "left-hippocampus",
+      "nodes": [
+        "Allen_head_of_hippocampus_R",
+        "Allen_body_of_hippocampus_R",
+        "Allen_tail_of_hippocampus_R"
+      ]
+    },
+    {
+      "id": "right-thalamus",
+      "nodes": [
+        "Allen_thalamus_L",
+        "Allen_anterior_nuclear_complex_of_thalamus_L",
+        "Allen_lateral_dorsal_nucleus_of_thalamus_L",
+        "Allen_mediodorsal_nucleus_of_thalamus_L",
+        "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_L",
+        "Allen_lateral_posterior_nucleus_of_thalamus_L",
+        "Allen_pulvinar_of_thalamus_L",
+        "Allen_ventral_anterior_nucleus_of_thalamus_L",
+        "Allen_ventral_lateral_nucleus_of_thalamus_L",
+        "Allen_ventral_posterior_lateral_nucleus_L",
+        "Allen_ventral_posterior_medial_nucleus_L",
+        "Allen_centromedian_nucleus_of_thalamus_L",
+        "Allen_parafascicular_nucleus_of_thalamus_L",
+        "Allen_midline_nuclear_complex_L",
+        "Allen_dorsal_lateral_geniculate_nucleus_L",
+        "Allen_medial_geniculate_nuclei_L",
+        "Allen_habenular_nuclei_L"
+      ]
+    },
+    {
+      "id": "left-thalamus",
+      "nodes": [
+        "Allen_thalamus_R",
+        "Allen_anterior_nuclear_complex_of_thalamus_R",
+        "Allen_lateral_dorsal_nucleus_of_thalamus_R",
+        "Allen_mediodorsal_nucleus_of_thalamus_R",
+        "Allen_reuniens_nucleus_medioventral_nucleus_of_thalamus_R",
+        "Allen_lateral_posterior_nucleus_of_thalamus_R",
+        "Allen_pulvinar_of_thalamus_R",
+        "Allen_ventral_anterior_nucleus_of_thalamus_R",
+        "Allen_ventral_lateral_nucleus_of_thalamus_R",
+        "Allen_ventral_posterior_lateral_nucleus_R",
+        "Allen_ventral_posterior_medial_nucleus_R",
+        "Allen_centromedian_nucleus_of_thalamus_R",
+        "Allen_parafascicular_nucleus_of_thalamus_R",
+        "Allen_midline_nuclear_complex_R",
+        "Allen_dorsal_lateral_geniculate_nucleus_R",
+        "Allen_medial_geniculate_nuclei_R",
+        "Allen_habenular_nuclei_R"
+      ]
+    },
+    {
+      "id": "right-subthalamic-nucleus",
+      "nodes": [
+        "Allen_subthalamic_nucleus_L",
+        "Allen_zona_incerta_L"
+      ]
+    },
+    {
+      "id": "left-subthalamic-nucleus",
+      "nodes": [
+        "Allen_subthalamic_nucleus_R",
+        "Allen_zona_incerta_R"
+      ]
+    },
+    {
+      "id": "right-septal-area",
+      "nodes": [
+        "Allen_septal_nuclei_L",
+        "Allen_bed_nucleus_of_stria_terminalis_L",
+        "Allen_basal_forebrain_L"
+      ]
+    },
+    {
+      "id": "left-septal-area",
+      "nodes": [
+        "Allen_septal_nuclei_R",
+        "Allen_bed_nucleus_of_stria_terminalis_R",
+        "Allen_basal_forebrain_R"
+      ]
+    },
+    {
+      "id": "hypothalamus",
+      "nodes": [
+        "Allen_hypothalamus_L",
+        "Allen_hypothalamus_R",
+        "Allen_mammillary_region_of_HTH_L",
+        "Allen_mammillary_region_of_HTH_R",
+        "Allen_preoptic_region_of_HTH_L",
+        "Allen_preoptic_region_of_HTH_R",
+        "Allen_supraoptic_region_of_HTH_L",
+        "Allen_supraoptic_region_of_HTH_R",
+        "Allen_tuberal_region_of_HTH_L",
+        "Allen_tuberal_region_of_HTH_R",
+        "Allen_mammillothalamic_tract_L",
+        "Allen_mammillothalamic_tract_R"
+      ]
+    },
+    {
+      "id": "pineal-gland",
+      "nodes": [
+        "Allen_pineal_body_L",
+        "Allen_pineal_body_R"
+      ]
+    },
+    {
+      "id": "midbrain",
+      "nodes": [
+        "Allen_midbrain_tegmentum_L",
+        "Allen_midbrain_tegmentum_R",
+        "Allen_red_nucleus_L",
+        "Allen_red_nucleus_R"
+      ]
+    },
+    {
+      "id": "tectum",
+      "nodes": [
+        "Allen_superior_colliculus_L",
+        "Allen_superior_colliculus_R",
+        "Allen_inferior_colliculus_L",
+        "Allen_inferior_colliculus_R",
+        "Allen_pretectal_region_L",
+        "Allen_pretectal_region_R"
+      ]
+    },
+    {
+      "id": "right-cerebral-peduncle",
+      "nodes": [
+        "Allen_cerebral_peduncle_crus_cerebri_L"
+      ]
+    },
+    {
+      "id": "left-cerebral-peduncle",
+      "nodes": [
+        "Allen_cerebral_peduncle_crus_cerebri_R"
+      ]
+    },
+    {
+      "id": "right-substantia-nigra",
+      "nodes": [
+        "Allen_substantia_nigra_L"
+      ]
+    },
+    {
+      "id": "left-substantia-nigra",
+      "nodes": [
+        "Allen_substantia_nigra_R"
+      ]
+    },
+    {
+      "id": "pons",
+      "nodes": [
+        "Allen_basilar_part_of_pons_L",
+        "Allen_basilar_part_of_pons_R",
+        "Allen_pontine_tegmentum_L",
+        "Allen_pontine_tegmentum_R"
+      ]
+    },
+    {
+      "id": "medulla-oblongata",
+      "nodes": [
+        "Allen_tegmentum_of_medulla_oblongata_L",
+        "Allen_tegmentum_of_medulla_oblongata_R",
+        "Allen_pyramidal_part_of_medulla_oblongata_L",
+        "Allen_pyramidal_part_of_medulla_oblongata_R",
+        "Allen_inferior_olive_L",
+        "Allen_inferior_olive_R"
+      ]
+    },
+    {
+      "id": "right-cerebellar-hemisphere",
+      "nodes": [
+        "Allen_lateral_hemisphere_of_cerebellum_L",
+        "Allen_paravermis_of_cerebellum_L"
+      ]
+    },
+    {
+      "id": "left-cerebellar-hemisphere",
+      "nodes": [
+        "Allen_lateral_hemisphere_of_cerebellum_R",
+        "Allen_paravermis_of_cerebellum_R"
+      ]
+    },
+    {
+      "id": "vermis",
+      "nodes": [
+        "Allen_cerebellar_vermis_L",
+        "Allen_cerebellar_vermis_R"
+      ]
+    },
+    {
+      "id": "right-cerebellar-white-matter",
+      "nodes": [
+        "Allen_white_matter_of_hindbrain_L"
+      ]
+    },
+    {
+      "id": "left-cerebellar-white-matter",
+      "nodes": [
+        "Allen_white_matter_of_hindbrain_R"
+      ]
+    },
+    {
+      "id": "right-deep-cerebellar-nuclei",
+      "nodes": [
+        "Allen_cerebellar_deep_nuclei_L"
+      ]
+    },
+    {
+      "id": "left-deep-cerebellar-nuclei",
+      "nodes": [
+        "Allen_cerebellar_deep_nuclei_R"
+      ]
+    },
+    {
+      "id": "right-cerebellar-peduncles",
+      "nodes": [
+        "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_L",
+        "Allen_middle_cerebellar_peduncle_L",
+        "Allen_inferior_cerebellar_peduncle_L"
+      ]
+    },
+    {
+      "id": "left-cerebellar-peduncles",
+      "nodes": [
+        "Allen_superior_cerebellar_peduncle_brachium_conjunctivum_R",
+        "Allen_middle_cerebellar_peduncle_R",
+        "Allen_inferior_cerebellar_peduncle_R"
+      ]
+    },
+    {
+      "id": "right-lateral-ventricle",
+      "nodes": [
+        "Allen_anterior_horn_of_lateral_ventricle_L",
+        "Allen_body_of_lateral_ventricle_L",
+        "Allen_atrium_of_lateral_ventricle_L",
+        "Allen_posterior_horn_of_lateral_ventricle_L",
+        "Allen_inferior_horn_of_lateral_ventricle_L"
+      ]
+    },
+    {
+      "id": "left-lateral-ventricle",
+      "nodes": [
+        "Allen_anterior_horn_of_lateral_ventricle_R",
+        "Allen_body_of_lateral_ventricle_R",
+        "Allen_atrium_of_lateral_ventricle_R",
+        "Allen_posterior_horn_of_lateral_ventricle_R",
+        "Allen_inferior_horn_of_lateral_ventricle_R"
+      ]
+    },
+    {
+      "id": "third-ventricle",
+      "nodes": [
+        "Allen_third_ventricle_L",
+        "Allen_third_ventricle_R"
+      ]
+    },
+    {
+      "id": "cerebral-aqueduct",
+      "nodes": [
+        "Allen_cerebral_aqueduct_L",
+        "Allen_cerebral_aqueduct_R"
+      ]
+    },
+    {
+      "id": "fourth-ventricle",
+      "nodes": [
+        "Allen_fourth_ventricle_L",
+        "Allen_fourth_ventricle_R"
+      ]
+    },
+    {
+      "id": "central-canal",
+      "nodes": [
+        "Allen_central_canal_of_medulla_oblongata_L",
+        "Allen_central_canal_of_medulla_oblongata_R"
+      ]
+    },
+    {
+      "id": "optic-chiasm",
+      "nodes": [
+        "VH_F_optic_chiasm"
+      ]
+    },
+    {
+      "id": "right-optic-tract",
+      "nodes": [
+        "Allen_optic_tract_L",
+        "Allen_optic_radiation_L"
+      ]
+    },
+    {
+      "id": "left-optic-tract",
+      "nodes": [
+        "Allen_optic_tract_R",
+        "Allen_optic_radiation_R"
+      ]
+    },
+    {
+      "id": "right-olfactory-bulb",
+      "nodes": [
+        "Allen_olfactory_bulb_L",
+        "Allen_olfactory_tract_L"
+      ]
+    },
+    {
+      "id": "left-olfactory-bulb",
+      "nodes": [
+        "Allen_olfactory_bulb_R",
+        "Allen_olfactory_tract_R"
+      ]
+    },
+    {
+      "id": "right-internal-carotid-artery",
+      "nodes": [
+        "FJ1658",
+        "FJ1674",
+        "FJ1682"
+      ]
+    },
+    {
+      "id": "left-internal-carotid-artery",
+      "nodes": [
+        "FJ1658M",
+        "FJ1674M",
+        "FJ1682M"
+      ]
+    },
+    {
+      "id": "right-vertebral-artery",
+      "nodes": [
+        "FJ1657"
+      ]
+    },
+    {
+      "id": "left-vertebral-artery",
+      "nodes": [
+        "FJ1657M"
+      ]
+    },
+    {
+      "id": "basilar-artery",
+      "nodes": [
+        "FJ1672",
+        "FJ1684",
+        "FJ1684M",
+        "FJ1689",
+        "FJ1689M",
+        "FJ1844"
+      ]
+    },
+    {
+      "id": "right-anterior-cerebral-artery",
+      "nodes": [
+        "FJ1654",
+        "FJ1671",
+        "FJ1676",
+        "FJ1681",
+        "FJ1690",
+        "FJ1696",
+        "FJ1697",
+        "FJ1698",
+        "FJ1699",
+        "FJ1722"
+      ]
+    },
+    {
+      "id": "left-anterior-cerebral-artery",
+      "nodes": [
+        "FJ1654M",
+        "FJ1671M",
+        "FJ1676M",
+        "FJ1681M",
+        "FJ1690M",
+        "FJ1696M",
+        "FJ1697M",
+        "FJ1698M",
+        "FJ1699M",
+        "FJ1722M"
+      ]
+    },
+    {
+      "id": "anterior-communicating-artery",
+      "nodes": [
+        "FJ1655"
+      ]
+    },
+    {
+      "id": "right-middle-cerebral-artery",
+      "nodes": [
+        "FJ1659",
+        "FJ1660",
+        "FJ1662",
+        "FJ1663",
+        "FJ1664",
+        "FJ1665",
+        "FJ1666",
+        "FJ1667",
+        "FJ1668",
+        "FJ1669",
+        "FJ1670",
+        "FJ1673",
+        "FJ1685",
+        "FJ1686",
+        "FJ1692",
+        "FJ1693",
+        "FJ1694",
+        "FJ1712",
+        "FJ1716",
+        "FJ1717",
+        "FJ1718",
+        "FJ1724",
+        "FJ1729"
+      ]
+    },
+    {
+      "id": "left-middle-cerebral-artery",
+      "nodes": [
+        "FJ1659M",
+        "FJ1660M",
+        "FJ1662M",
+        "FJ1663M",
+        "FJ1664M",
+        "FJ1665M",
+        "FJ1666M",
+        "FJ1667M",
+        "FJ1668M",
+        "FJ1669M",
+        "FJ1670M",
+        "FJ1673M",
+        "FJ1685M",
+        "FJ1686M",
+        "FJ1692M",
+        "FJ1693M",
+        "FJ1694M",
+        "FJ1712M",
+        "FJ1716M",
+        "FJ1717M",
+        "FJ1718M",
+        "FJ1724M",
+        "FJ1729M"
+      ]
+    },
+    {
+      "id": "right-posterior-communicating-artery",
+      "nodes": [
+        "FJ1679",
+        "FJ1713"
+      ]
+    },
+    {
+      "id": "left-posterior-communicating-artery",
+      "nodes": [
+        "FJ1679M",
+        "FJ1713M"
+      ]
+    },
+    {
+      "id": "right-posterior-cerebral-artery",
+      "nodes": [
+        "FJ1661",
+        "FJ1675",
+        "FJ1677",
+        "FJ1678",
+        "FJ1680",
+        "FJ1687",
+        "FJ1691",
+        "FJ1714",
+        "FJ1719",
+        "FJ1720",
+        "FJ1721",
+        "FJ1723",
+        "FJ1727"
+      ]
+    },
+    {
+      "id": "left-posterior-cerebral-artery",
+      "nodes": [
+        "FJ1661M",
+        "FJ1675M",
+        "FJ1677M",
+        "FJ1678M",
+        "FJ1680M",
+        "FJ1687M",
+        "FJ1691M",
+        "FJ1714M",
+        "FJ1719M",
+        "FJ1720M",
+        "FJ1721M",
+        "FJ1723M",
+        "FJ1727M"
+      ]
+    },
+    {
+      "id": "right-cerebellar-arteries",
+      "nodes": [
+        "FJ1656",
+        "FJ1683",
+        "FJ1688",
+        "FJ1700",
+        "FJ1701",
+        "FJ1702",
+        "FJ1703",
+        "FJ1704",
+        "FJ1705",
+        "FJ1706",
+        "FJ1707",
+        "FJ1708",
+        "FJ1709",
+        "FJ1710",
+        "FJ1711",
+        "FJ1715",
+        "FJ1726",
+        "FJ1728"
+      ]
+    },
+    {
+      "id": "left-cerebellar-arteries",
+      "nodes": [
+        "FJ1656M",
+        "FJ1683M",
+        "FJ1688M",
+        "FJ1700M",
+        "FJ1701M",
+        "FJ1702M",
+        "FJ1703M",
+        "FJ1704M",
+        "FJ1705M",
+        "FJ1706M",
+        "FJ1707M",
+        "FJ1708M",
+        "FJ1709M",
+        "FJ1710M",
+        "FJ1711M",
+        "FJ1715M",
+        "FJ1726M",
+        "FJ1728M"
+      ]
+    }
+  ],
+  "shadingBake": {
+    "tool": "tools/bake-shading.mjs",
+    "config": {
+      "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). occluders: which layers can shade each layer. Inner structures are not shaded by the cortex or white matter around them, so they stay readable when the cortex is faded or cut away.",
+      "model": "public/models/brain.glb",
+      "provenance": "src/brain/generated/provenance.json",
+      "aoDistance": 0.008,
+      "rays": 48,
+      "rayOffset": 0.0002,
+      "noiseFrequency": 220,
+      "occluders": {
+        "cortex": [
+          "cortex",
+          "cerebellum",
+          "brainstem",
+          "artery",
+          "nerve"
+        ],
+        "white-matter": [
+          "white-matter",
+          "deep"
+        ],
+        "deep": [
+          "deep",
+          "brainstem"
+        ],
+        "brainstem": [
+          "brainstem",
+          "cerebellum",
+          "cortex",
+          "artery",
+          "nerve",
+          "deep"
+        ],
+        "cerebellum": [
+          "cerebellum",
+          "brainstem",
+          "cortex",
+          "artery"
+        ],
+        "ventricle": [],
+        "nerve": [
+          "nerve",
+          "cortex",
+          "brainstem",
+          "artery"
+        ],
+        "artery": [
+          "artery",
+          "cortex",
+          "cerebellum",
+          "brainstem",
+          "nerve"
+        ]
+      },
+      "fat": null
+    },
+    "attribute": "_TISSUE (VEC4 unsigned byte, normalised): r ambient occlusion, g mottling noise, b fat proximity, a unused",
+    "unbakedSha256": "c5f6a7b025502100ea1a2b17d62022922b74050b269f4fd9bcf778ef9905cf99",
+    "unbakedOutput": {
+      "bytes": 5967196
+    },
+    "vertices": 162715,
+    "layers": {
+      "cortex": {
+        "meshes": 78,
+        "meanAO": 0.608,
+        "vertices": 83156
+      },
+      "white-matter": {
+        "meshes": 5,
+        "meanAO": 0.775,
+        "vertices": 14069
+      },
+      "deep": {
+        "meshes": 22,
+        "meanAO": 0.527,
+        "vertices": 23192
+      },
+      "brainstem": {
+        "meshes": 8,
+        "meanAO": 0.537,
+        "vertices": 3826
+      },
+      "cerebellum": {
+        "meshes": 9,
+        "meanAO": 0.539,
+        "vertices": 14552
+      },
+      "ventricle": {
+        "meshes": 6,
+        "meanAO": 1,
+        "vertices": 4564
+      },
+      "nerve": {
+        "meshes": 5,
+        "meanAO": 0.741,
+        "vertices": 983
+      },
+      "artery": {
+        "meshes": 16,
+        "meanAO": 0.584,
+        "vertices": 18373
+      }
+    }
+  }
+}

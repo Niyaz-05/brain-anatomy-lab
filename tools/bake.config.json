@@ -1,0 +1,20 @@
+{
+  "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). occluders: which layers can shade each layer. Inner structures are not shaded by the cortex or white matter around them, so they stay readable when the cortex is faded or cut away.",
+  "model": "public/models/brain.glb",
+  "provenance": "src/brain/generated/provenance.json",
+  "aoDistance": 0.008,
+  "rays": 48,
+  "rayOffset": 0.0002,
+  "noiseFrequency": 220,
+  "occluders": {
+    "cortex": ["cortex", "cerebellum", "brainstem", "artery", "nerve"],
+    "white-matter": ["white-matter", "deep"],
+    "deep": ["deep", "brainstem"],
+    "brainstem": ["brainstem", "cerebellum", "cortex", "artery", "nerve", "deep"],
+    "cerebellum": ["cerebellum", "brainstem", "cortex", "artery"],
+    "ventricle": [],
+    "nerve": ["nerve", "cortex", "brainstem", "artery"],
+    "artery": ["artery", "cortex", "cerebellum", "brainstem", "nerve"]
+  },
+  "fat": null
+}
