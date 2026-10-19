@@ -1,5 +1,7 @@
 # Human Brain — Interactive 3D Learning Lab
 
+**Live:** https://brain-anatomy-lab.vercel.app
+
 A realistic, interactive 3D human brain for secondary-school and first-year biology:
 
 - **Real look.** Fresh-tissue colours, a moist sheen, and baked shading that darkens every sulcus. "Colour" switches to **Lobes** or functional **Areas** to teach the divisions.
@@ -52,6 +54,10 @@ node tools/validate-assets.mjs
 ```
 
 Both steps are deterministic, and the inputs and output are hashed in `src/brain/generated/provenance.json`. `tools/inspect-brain.mjs` lists every node of the source file.
+
+## Deploy
+
+The site is a Vercel project (Vite preset, output `dist/`) connected to [github.com/Niyaz-05/brain-anatomy-lab](https://github.com/Niyaz-05/brain-anatomy-lab). Every push to `main` deploys to https://brain-anatomy-lab.vercel.app; pushes to other branches get preview URLs.
 
 ## Layout
 

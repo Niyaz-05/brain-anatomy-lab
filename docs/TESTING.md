@@ -43,6 +43,7 @@ Results recorded on 2026-10-19 on Windows 11, Node 22.14.0, headless Chromium (P
 | Determinism | **Pass**: re-extraction gives the recorded unbaked sha256 (`c5f6a7b0…`) and re-baking the recorded final sha256 (`fa4443f1…`) |
 | `npm run build` | **Pass**. JS bundle about 1.49 MB (about 414 kB gzip); Vite warns about chunk size |
 | `npm run e2e` | **Pass**: 17/17. The full run (23.5 min) had 16/17; the tour test timed out at 4 min under software WebGL, was marked slow, and passed on re-run (6.5 min) |
+| Live site (2026-10-19) | **Pass**: https://brain-anatomy-lab.vercel.app returns the page; `models/brain.glb` is served with the recorded sha256 `fa4443f1…`; the model renders in headless Chromium with no console errors |
 
 ## Defects found and fixed during QA
 
