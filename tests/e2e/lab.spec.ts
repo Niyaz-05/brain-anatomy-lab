@@ -148,18 +148,22 @@ test('the cut shows the inside of the brain and can be moved, flipped and turned
   const whole = await canvas.screenshot();
   await radio(page, 'Front').click();
   await expect(radio(page, 'Front')).toHaveAttribute('aria-checked', 'true');
+  // The camera turns to face the cut, and the panel says what is kept.
+  await expect(page.locator('[aria-label="Camera views"] button', { hasText: /^Front$/ })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.slice-hint')).toHaveText('Showing the back half');
   await page.getByLabel('Cut position').fill('0.1');
-  await page.getByRole('button', { name: 'Front', exact: true }).click();
   await settle(page, 2500);
   const cut = await canvas.screenshot();
   expect(Buffer.compare(whole, cut)).not.toBe(0);
   await page.screenshot({ path: `${SHOTS}/08-cut-coronal.png` });
   await page.getByRole('button', { name: 'Flip' }).click();
   await expect(page.getByRole('button', { name: 'Flip' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('[aria-label="Camera views"] button', { hasText: /^Back$/ })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.slice-hint')).toHaveText('Showing the front half');
   await radio(page, 'Top').click();
   await page.getByLabel('Cut position').fill('0.2');
-  await page.getByRole('button', { name: 'Top', exact: true }).click();
   await page.getByRole('button', { name: 'Flip' }).click();
+  await expect(page.locator('[aria-label="Camera views"] button', { hasText: /^Top$/ })).toHaveAttribute('aria-pressed', 'true');
   await settle(page, 2500);
   await page.screenshot({ path: `${SHOTS}/09-cut-axial.png` });
   await radio(page, 'Off').click();

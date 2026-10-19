@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { brainDefinition as def } from '../../src/brain/definition';
-import { effectiveColourBy, effectiveSlice, highlightedIds, initialState, insideActive, isVisible, makeReducer } from '../../src/app/state';
+import { effectiveColourBy, effectiveSlice, highlightedIds, initialState, insideActive, isVisible, keptHalf, makeReducer } from '../../src/app/state';
 import { searchStructures } from '../../src/app/search';
 
 const reduce = makeReducer(def);
@@ -78,6 +78,31 @@ describe('lab state', () => {
     s = reduce(s, { type: 'reset' });
     expect(s.slice.axis).toBe('off');
     expect(s.camera.nonce).toBeGreaterThan(0);
+  });
+
+  it('choosing a cut or flipping it turns the camera to face the cut face', () => {
+    let s = initialState(def);
+    const turns = (action: Parameters<typeof reduce>[1], preset: string) => {
+      const nonce = s.camera.nonce;
+      s = reduce(s, action);
+      expect(s.camera.preset).toBe(preset);
+      expect(s.camera.nonce).toBe(nonce + 1);
+    };
+    turns({ type: 'set-slice', axis: 'sagittal' }, 'left');
+    expect(keptHalf(s.slice)).toMatch(/right half/);
+    turns({ type: 'set-slice', flip: true }, 'right');
+    expect(keptHalf(s.slice)).toMatch(/left half/);
+    turns({ type: 'set-slice', axis: 'coronal' }, 'posterior');
+    turns({ type: 'set-slice', flip: false }, 'anterior');
+    expect(keptHalf(s.slice)).toBe('the back half');
+    turns({ type: 'set-slice', axis: 'axial' }, 'superior');
+    turns({ type: 'set-slice', flip: true }, 'inferior');
+    // Moving the cut, or turning it off, leaves the camera alone.
+    const nonce = s.camera.nonce;
+    s = reduce(s, { type: 'set-slice', at: 0.4 });
+    s = reduce(s, { type: 'set-slice', axis: 'off' });
+    expect(s.camera.nonce).toBe(nonce);
+    expect(def.cameraPresets.map((c) => c.id)).toEqual(expect.arrayContaining(['left', 'right', 'anterior', 'posterior', 'superior', 'inferior']));
   });
 });
 

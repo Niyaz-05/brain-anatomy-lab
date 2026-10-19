@@ -7,7 +7,7 @@ Results recorded on 2026-10-19 on Windows 11, Node 22.14.0, headless Chromium (P
 | Check | Command | What it covers |
 |---|---|---|
 | Types | `npm run typecheck` | TypeScript strict, `noUncheckedIndexedAccess` |
-| Unit | `npm test` | Definition validity and validation-gate rejections (lobe mismatch, unknown area, unapproved asset, insecure link); every node ↔ structure; 78 gyri each in exactly one lobe of its own hemisphere; 6 lobes per hemisphere; functional areas built from gyri, language areas left only; every left/right structure on its side; anatomical orientation; tour focus ids; CSF streams (8, from each part of the lateral ventricle, through third ventricle → aqueduct → fourth ventricle, leaving the model); reducer (lobe highlight, isolate, layers, cut clamping and flip, tour overrides, reset); search (Broca, thalamus, medulla, circle of Willis, Heschl) |
+| Unit | `npm test` | Cut-face mesh closing (`closeHoles`) and the camera turning to face a cut. Definition validity and validation-gate rejections (lobe mismatch, unknown area, unapproved asset, insecure link); every node ↔ structure; 78 gyri each in exactly one lobe of its own hemisphere; 6 lobes per hemisphere; functional areas built from gyri, language areas left only; every left/right structure on its side; anatomical orientation; tour focus ids; CSF streams (8, from each part of the lateral ventricle, through third ventricle → aqueduct → fourth ventricle, leaving the model); reducer (lobe highlight, isolate, layers, cut clamping and flip, tour overrides, reset); search (Broca, thalamus, medulla, circle of Willis, Heschl) |
 | Assets | `npm run validate:assets` | GLB sha256 = provenance, node set = geometry record, finite positions, unit normals, indices in range, triangle counts, baked `_TISSUE` on every mesh, attribution names HuBMAP, the authors, the DOI, Allen, BodyParts3D, DBCLS, CC BY 4.0 and the source and output hashes |
 | Determinism | re-run `tools/extract-brain.mjs` then `tools/bake-shading.mjs` | Byte-identical `brain.glb` |
 | Build | `npm run build` | Type check + production bundle |
@@ -44,6 +44,23 @@ Results recorded on 2026-10-19 on Windows 11, Node 22.14.0, headless Chromium (P
 | `npm run build` | **Pass**. JS bundle about 1.49 MB (about 414 kB gzip); Vite warns about chunk size |
 | `npm run e2e` | **Pass**: 17/17. The full run (23.5 min) had 16/17; the tour test timed out at 4 min under software WebGL, was marked slow, and passed on re-run (6.5 min) |
 | Live site (2026-10-19) | **Pass**: https://brain-anatomy-lab.vercel.app returns the page; `models/brain.glb` is served with the recorded sha256 `fa4443f1…`; the model renders in headless Chromium with no console errors |
+
+## Cut fix (2026-10-19)
+
+Reported in Chrome: the cut faces had holes, the cut face was often out of view, it was not clear which half was kept, and the faces looked flat. Checked in headless Chromium on the reporter's GPU (AMD Radeon, ANGLE Direct3D 11) before and after the fix, with Side, Front and Top cuts, each with and without Flip.
+
+- **Holes.** Stencil capping needs closed meshes. Every brain part is already closed, so the brain cuts had no holes; the same code runs here and leaves the brain meshes as they are. The stencil passes now use a closed copy of each part (`src/viewer/closeHoles.ts`: weld, find boundary loops, fan-fill them). The visible tissue and the model file are unchanged.
+- **Cut face out of view.** Choosing a cut, or pressing Flip, now turns the camera to the removed side: Side → Left side (Right side when flipped), Front → Front (Back), Top → Top (Bottom).
+- **Which half is kept.** The panel shows it under the slider, for example "Showing the back half".
+- **Flat faces.** Cut faces have a soft, deterministic noise grain of the same size on every part, and a moister finish (roughness 0.5).
+
+| Check | Result |
+|---|---|
+| `npm run typecheck` | **Pass** |
+| `npm test` | **Pass**: 29/29 in 3 files, including `closeHoles` (open tube, open box, closed sphere unchanged, all 149 brain parts already closed and returned unchanged) and the camera follow |
+| `npm run validate:assets` | **Pass**: model unchanged (`fa4443f16203…`) |
+| `npm run e2e` | **Pass**: 17/17 in 24.8 min; the cut test also checks the camera preset and the kept-half hint |
+| GPU screenshots | All 6 cut and flip cases face the cut, with filled cut faces and no console errors |
 
 ## Defects found and fixed during QA
 
