@@ -24,7 +24,7 @@ const detailTitle = (page: Page) => page.locator('#detail-title');
 const listButton = (page: Page, name: string | RegExp) => page.locator('.struct-list button', { hasText: name });
 const radio = (page: Page, name: string) => page.getByRole('radio', { name, exact: true });
 
-test('loads a realistic brain without console errors and with a clean main screen', async ({ page }) => {
+test('loads a realistic brain without console errors and with a clean main screen @smoke', async ({ page }) => {
   const errors = await open(page);
   await ready(page);
   await expect(page.getByRole('heading', { name: 'Human Brain', level: 1 })).toBeVisible();
@@ -208,7 +208,7 @@ test('guided tour navigates forward, back, through cuts, and finishes', async ({
   await expect(page.getByRole('button', { name: 'Anatomy' })).toHaveAttribute('aria-pressed', 'true');
 });
 
-test('phone layout: structures open from the dock and details follow a pick', async ({ page }) => {
+test('phone layout: structures open from the dock and details follow a pick @smoke', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await open(page);
   await ready(page);
@@ -236,7 +236,7 @@ test('the About sheet holds the HuBMAP, Allen and BodyParts3D credits', async ({
   await expect(dialog).toHaveCount(0);
 });
 
-test('without WebGL the learning content still works', async ({ page }) => {
+test('without WebGL the learning content still works @smoke', async ({ page }) => {
   await open(page, '?nowebgl');
   await expect(page.getByRole('heading', { name: '3D view unavailable' })).toBeVisible();
   await listButton(page, /^Pons$/).click();

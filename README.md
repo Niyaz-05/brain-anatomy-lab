@@ -2,6 +2,8 @@
 
 **Live:** https://brain-anatomy-lab.vercel.app
 
+Works on phones and tablets: the details rise from the bottom in a sheet you can drag, fold or close with a swipe down, and picking a structure frames it above the sheet.
+
 A realistic, interactive 3D human brain for secondary-school and first-year biology:
 
 - **Real look.** Fresh-tissue colours, a moist sheen, and baked shading that darkens every sulcus. "Colour" switches to **Lobes** or functional **Areas** to teach the divisions.
